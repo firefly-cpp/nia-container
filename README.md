@@ -19,23 +19,37 @@ $ docker build --tag nia .
 
 Run the image using
 
+#### Linux $PWD
 ```sh
 docker run -it --name nia -v "$PWD:/var/nia" nia
+```
+
+#### Windows {$PWD}
+Run the image using Powershell and {$PWD} due to $PWD not being avaliable in command prompt on Windows.
+```sh
+docker run -it --name nia -v "{$PWD}:/var/nia" nia
 ```
 
 ### Podman
 
 The image can be built using the following command:
 
+
+
+Run the image using
+
+#### Linux $PWD
 ```sh
 $ podman build --tag nia .
 ```
 
-Run the image using
-
+#### Windows ($PWD)
+Run the image using Powershell and {$PWD} due to $PWD not being avaliable in command prompt on Windows.
 ```sh
-podman run -it --name nia -v "$PWD:/var/nia" nia
+podman run -it --name nia -v "{$PWD}:/var/nia" nia
 ```
+
+
 
 ## Disclaimer
 
