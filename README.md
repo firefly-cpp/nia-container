@@ -34,14 +34,13 @@ docker run -it --name nia -v "{$PWD}:/var/nia" nia
 
 The image can be built using the following command:
 
-```sh
-$ podman build --tag nia .
-```
+
 
 Run the image using
 
 #### Linux $PWD
 ```sh
+$ podman build --tag nia .
 ```
 
 #### Windows ($PWD)
